@@ -1,0 +1,656 @@
+body {
+    background-image: url('./images/background.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+.Nav-img {
+    width: 21%;
+}
+
+#navbarNav {
+    padding-left: 160px !important;
+}
+
+.nav-link {
+    color: #39474d;
+    fill: #39474d;
+    font-size: 17px;
+}
+
+.nav-item {
+    padding: 2px;
+}
+
+
+.about {
+    margin-top: 200px;
+}
+
+.about .container {
+    padding: 0px 40px;
+}
+
+.about .container>h3 {
+    font-size: 24px;
+}
+
+.about .container>h3>span {
+    font-style: italic;
+}
+
+
+
+.like-img1 {
+    position: absolute;
+
+    z-index: 1;
+    top: 515px;
+    left: 30px;
+    width: 16%;
+    height: auto;
+}
+
+.like-img2 {
+    position: absolute;
+
+    z-index: 1;
+    top: 777px;
+    left: 530px;
+    width: 12%;
+    height: auto;
+}
+
+.box {
+    padding: 5px;
+    border: 5px solid black;
+}
+
+.box-image {
+    width: 100%;
+    height: 40%;
+}
+
+.black-border {
+    border: 14px solid #7a7a7a;
+    border-radius: 10px;
+    transition: 0.5s;
+    height: fit-content;
+}
+
+.right-box {
+    transform: rotate(2deg);
+}
+
+.left-box {
+    transform: rotate(-2deg);
+}
+
+.right-box:hover {
+    transform: scale(1.1) rotate(2deg);
+    transition: 0.5s;
+}
+
+.left-box:hover {
+    transform: scale(1.1) rotate(3deg);
+    transition: 0.5s;
+}
+
+
+.likes-section {
+    padding-top: 165px;
+}
+
+.black-border>div>h4 {
+    color: #54595f;
+    margin: 0px !important;
+}
+
+.black-border>div>p {
+    color: #6ec1e4;
+}
+
+
+.right-text {
+    padding: 45px 45px 45px 55px;
+}
+
+.right-text>.right-text-heading {
+    font-weight: 500;
+}
+
+.right-text>p>span {
+    font-weight: 700;
+}
+
+.button-1 {
+    border-radius: 4px;
+    color: white;
+    font-weight: 500;
+    background-color: #046bd2;
+    border: #046bd2;
+    padding: 12px 30px;
+    transition: 0.3s;
+}
+
+.button-1:hover {
+    background-color: #045cb5;
+    transition: 0.3s;
+}
+
+footer{
+    background-image: url("./images/footer_background.jpg");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/*
+.footer-border{
+    border-left: 1px solid white;
+    height: 14px;
+    margin-top: 10px;
+    margin-left: 15px;
+    margin-right: 15px;
+    width: auto;
+}
+
+footer .row .first{
+    padding-left: 221px;
+    padding-right: 0px;
+}
+
+footer .row .left{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+
+footer .row .first{
+    padding-left: 0px;
+    padding-right: 0px;
+    justify-content :end;
+}
+
+footer .row .left{
+    justify-content:start;
+    padding-right: 30px;
+    
+}
+*/
+
+footer a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+footer > .container > .container > .line {
+    color: white;
+}
+
+
+footer .container-2 .column p{
+    font-weight:lighter;
+    color: white;
+    font-size: 13px;
+}
+
+footer .container-2 .column{
+    line-height: 5px;
+}
+
+.box{
+    margin-top: 12px;
+    border: 0;
+    border-top: 1px solid white;
+    flex-grow: 1;
+}
+
+footer .container-2 .container p{
+    color: white;
+}
+
+.fa-brands:hover{
+    color: rgb(240, 240, 240);
+    transition: 0.3s;
+}
+.fa-regular{
+    color: rgb(240, 240, 240);
+    transition: 0.3s;
+}
+
+.experts-section > .container > .row > .text > p{
+    color: #54595f;
+}
+
+
+.text{
+    padding-right: 15px;
+}
+
+.left-border {
+
+    border: 0;
+    border-left: 1px solid #334155;
+}
+
+.year-bottom{
+    color: #54595f;
+    font-size: 20px;
+    line-height: 45px;
+}
+
+.shadow{
+    box-shadow: 0px 30px 60px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+
+@keyframes countUp {
+    from { content: "0%"; }
+    to { content: "99%"; }
+}
+
+.year-2::before {
+    color: #334155;
+    content: "0%";
+    font-size: 65px; /* Adjust the font size as needed */
+    text-align: center;
+    animation: countUp 3s linear;
+    animation-fill-mode: forwards;
+    margin: 0px !important;
+}
+
+@keyframes countAnimation {
+    from { content: "0+"; }
+    to { content: "1+"; }
+}
+
+.year::before {
+    color: #334155;
+    content: "0+";
+    font-size: 65px; /* Adjust the font size as needed */
+    text-align: center;
+    animation: countAnimation 3s linear forwards;
+    margin: 0px !important;
+}
+
+.container-3{
+    padding-top: 30px;
+    padding-right: 560px;
+    padding-left: 43px ;
+}
+
+.tiktok{
+    position: relative;
+    background-image: url("./images/tiktok.png");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 350px;
+    height: 450px;
+    border-radius: 10px;
+    position: relative;
+    transition: 0.5s;
+   
+}
+
+
+.transp-color{
+    top: 0px;
+    border-radius: 10px;
+    left: 0px;
+    width: 350px;
+    height: 450px;
+    padding-top: 195px;
+    padding-left: 30px;
+    position: absolute;
+    background:  rgba(7, 131, 255, 0.5);
+    transition: 0.3s;
+}
+
+.transp-color:hover{
+    background:  rgba(0, 76, 252, 0.57);
+    transition: 0.3s;
+}
+
+
+.button-apps{
+    color: white;
+    background-color: #C822AA;
+    border: 1px solid #C822AA;
+    border-radius: 50px;
+    padding: 11px 33px;
+    transition: 0.3s;
+}
+
+.button-apps:hover{
+    background-color: transparent;
+    transition: 0.3s;
+}
+.tiktok-text{
+    padding-bottom: 15px;
+}
+
+.tiktok-heading{
+    padding-top: 75px;
+    margin-bottom: 3px;
+}
+
+.transp-color > h3{
+    color: white;
+}
+.transp-color > p{
+    color: white;
+}
+
+.instagram{
+    position: relative;
+    background-image: url("./images/Instagram.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 350px;
+    height: 450px;
+    border-radius: 10px;
+    transition: 0.5s ;
+}
+
+
+.twitter{
+    position: relative;
+    background-image: url("./images/twitter.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 350px;
+    height: 450px;
+    border-radius: 10px;
+    transition: 0.5s ;
+}
+
+.tiktok:hover{
+    background-size: 280%;
+    transition: 0.3s ease-in-out;
+}
+
+.instagram:hover{
+    background-size: 350%;
+    transition: 0.5s;
+}
+
+.twitter:hover{
+    background-size: 200%;
+    transition: 0.5s ;
+}
+
+.social-jump-box{
+    position: relative;
+    background-image: url("./images/socialjump.png");
+    background-position :center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    border-radius: 10px;
+    height: 423px;
+
+}
+
+.social-jump-box::before{
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    border-radius: 10px;
+    position: absolute;
+    content: "";
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.center-div{
+    width: 60%;
+}
+
+.experience-p{
+    color: #7a7a7a;
+}
+.experience-p-1{
+    color:#334155;
+}
+
+li{
+    list-style: none;
+    padding-bottom: 8px;
+}
+ul{
+    padding: 0px !important;
+    text-align: start;
+    width: 60%;
+}
+
+.top-p{
+    width: 92%;
+    line-height: 1.6rem;
+}
+
+.bottom-top{
+    width: 40%;
+}
+
+.photo-1{
+    position: relative;
+    background-image: url("./images/photo-1.png");
+    background-position :center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    width: 130%;
+    height: 380px;
+}
+
+.photo-2{
+    position: relative;
+    background-image: url("./images/photo-2.png");
+    background-position :center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    width: 100%;
+    height: 300px;
+}
+
+.photo-1::before{
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    border-radius: 10px;
+    position: absolute;
+    content: "";
+    background: rgba(0, 0, 0, 0.3);
+    transition: 0.3s;
+}
+.photo-1::before:hover{
+    background: rgba(0, 0, 0, 0.9);
+    transition: 0.3s;
+}
+
+.photo-2::before{
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    border-radius: 10px;
+    position: absolute;
+    content: "";
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.follow{
+    position: relative;
+    background-image: url("./images/twitter.png");
+    background-position :center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    height: 330px;
+    width: 100%;
+}
+
+.follow::before{
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    border-radius: 10px;
+    position: absolute;
+    content: "";
+    background: rgba(0, 0, 0, 0.4);
+}
+
+
+
+@media (max-width:768px) {
+    .Nav-img {
+        width: 190px;
+    }
+
+    .about {
+        margin-top: 71px;
+    }
+
+    .about .container {
+        padding: 0px 40px;
+    }
+
+    .about .container>h1 {
+        font-size: 30px;
+    }
+
+    .likes-section {
+        padding-top: 35px;
+    }
+
+    .black-border {
+        border: 7px solid #7a7a7a;
+        border-radius: 10px;
+        transition: 0.5s;
+        height: fit-content;
+    
+    }
+
+    .black-border>div>h4 {
+       font-size: 24px;
+    }
+
+    .black-border>div>p {
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    .like-img1 {
+        top: 300px;
+        left: 20px;
+        width: 50%;
+
+    }
+
+    .like-img2 {
+        top: 597px;
+        left: 220px;
+        width: 40%;
+    }
+
+    .right-text {
+        padding: 70px 15px 25px 15px;
+    }
+    .button-1 {
+        padding: 10px 28px;
+    }
+
+    footer a {
+        font-size: 17px;
+    }
+
+    footer .container-2 .column{
+        line-height: 2px;
+    }
+
+    footer .container-2 .container p{
+        font-size: 13px;
+        margin-top: 3px;
+    }
+
+    .left-border {
+
+        border: 0;
+    }
+
+    .text-99{
+        padding: 0px 0px 0px 0px !important;
+    }
+
+    .small-99-text{
+        padding-right: 18px;
+    }
+
+    .heading{
+        font-size: 20px;
+        color: #334155;
+    }
+
+    .small-heading-text{
+        padding-right: 10px;
+        line-height: 25px;
+    }
+
+    .container-3{
+        padding-top: 0px;
+        padding-right: 0px;
+        padding-left: 0px ;
+    }
+    .instagram , .twitter, .tiktok{
+        width: 340px;
+        height: 350px;
+    }
+
+    .transp-color{
+        width: 340px;
+        height: 350px;
+        padding-top: 100px;
+    }
+    .tiktok-heading{
+        margin-bottom: 8px;
+    }
+
+    .center-div{
+        width: 75%;
+    }
+    .social-jump-box{
+        background-attachment:scroll;
+    
+    }
+
+    .bottom-top,.top-p, ul{
+        width: 100%;
+    }
+
+    .photo-1{
+        
+        width: 100%;
+    }
+    
+    .photo-2{
+        
+        width: 100%;
+    }
+
+    .follow{
+        height: 230px;
+    }
+    
+}
